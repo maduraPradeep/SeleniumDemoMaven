@@ -73,7 +73,7 @@ public class FBLoginTest extends AbstractTest {
 		WebElement profileName = 
 				this.webDriver.findElement(By.xpath(UserHomePage.ProfileName()));
 		
-		Assert.assertTrue("Profile name is different", profileName.getText().equalsIgnoreCase(this.expectedResult));
+		Assert.assertFalse("Profile name is different", profileName.getText().equalsIgnoreCase(this.expectedResult));
 		
 		homePageFlow.LogOut();
 	}
