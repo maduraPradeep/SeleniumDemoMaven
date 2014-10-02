@@ -10,7 +10,7 @@ public class Utilities {
 		Properties configurations = new Properties();
 		String baseDirectory = new File(".").getAbsolutePath();
 		String settingsDirectory = baseDirectory + "\\src\\test\\java\\selenium\\core\\settings\\config.properties";
-		
+		//comment
 		FileInputStream stream = new FileInputStream(settingsDirectory);
 		configurations.load(stream);
 		
