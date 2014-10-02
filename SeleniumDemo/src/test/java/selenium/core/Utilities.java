@@ -13,7 +13,7 @@ public class Utilities {
 		//comment
 		FileInputStream stream = new FileInputStream(settingsDirectory);
 		configurations.load(stream);
-		
+		//comment
 		return configurations;
 	}
 }
